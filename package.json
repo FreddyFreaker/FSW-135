@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "mongoose": "^5.13.2"
-  }
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.10"
+  },
+  "name": "fsw-135",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddyFreaker/FSW-135.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddyFreaker/FSW-135/issues"
+  },
+  "homepage": "https://github.com/FreddyFreaker/FSW-135#readme",
+  "description": ""
 }
