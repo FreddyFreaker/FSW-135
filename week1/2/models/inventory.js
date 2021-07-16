@@ -1,20 +1,28 @@
 const mongoose = require("mongoose")
-const schema = mongoose.Schema
+const Schema = mongoose.Schema
 
 const stockSchema = new Schema({
-    product_name: {
+    name: {
         type: String,
         required: true
     },
-    product_type: {
+    type: {
         type: String,
         required: true
     },
-    product_price: {
+    price: {
         type: Number,
         required: true,
-        min: 1874
+        min: 1
     }
 })
 
-module.exports = mongoose.model('Stock', stockSchema)
+
+
+
+
+
+
+
+
+module.exports = mongoose.model('Inventory', stockSchema)
