@@ -1,5 +1,4 @@
 const express = require('express')
-const inventory = require('../models/inventory.js')
 const inventoryRouter = express.Router()
 const Inventory = require('../models/inventory.js')
 
@@ -19,7 +18,7 @@ inventoryRouter.get("/", (req, res, next) => {
 //get one
 inventoryRouter.get("/:itemId", (req,res,next) =>{
    const itemId = req.params.itemId
-   const foundItem = Items.find( inventory => inventory._id === itemId)
+   const foundItem = Inventory.findById(itemId)
    if(!foundItem){
       const error = new Error(`The item with id ${itemId} was not found`)
       res.status(500)
